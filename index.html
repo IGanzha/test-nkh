@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Test</title>
+</head>
+<body>
+
+  <section class='section'>
+    <p class="section_task">1) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex</p>
+    <ul class="catalog">
+      <li class="catalog_item">Первый</li>
+      <li class="catalog_item">Второй</li>
+      <li class="catalog_item">Третий</li>
+      <li class="catalog_item">Четвертый</li>
+      <li class="catalog_item">Пятый</li>
+      <li class="catalog_item">Шестой</li>
+      <li class="catalog_item">Седьмой</li>
+      <li class="catalog_item">Восьмой</li>
+    </ul>
+  </section>
+
+  <section class='section'>
+    <p class="task">2) поменять направление осей с дефолтного состояния <br> 3) выравнить один элемент по поперечней оси <br> 4) задать выравнивание ряду flex-end</p>
+    <ul class="catalog catalog--alt-direction">
+      <li class="catalog_item">Первый</li>
+      <li class="catalog_item catalog_item--renegade">Второй</li>
+      <li class="catalog_item ">Третий</li>
+      <li class="catalog_item">Четвертый</li>
+      <li class="catalog_item">Пятый</li>
+      <li class="catalog_item">Шестой</li>
+      <li class="catalog_item">Седьмой</li>
+      <li class="catalog_item">Восьмой</li>
+    </ul>
+  </section>
+
+  <section class='section'>
+    <p class="task">5) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block</p>
+    <ul class="catalog catalog--inline">
+      <li class="catalog_item catalog_item--inline">Первый</li>
+      <li class="catalog_item catalog_item--inline">Второй</li>
+      <li class="catalog_item catalog_item--inline">Третий</li>
+      <li class="catalog_item catalog_item--inline">Четвертый</li>
+      <li class="catalog_item catalog_item--inline">Пятый</li>
+      <li class="catalog_item catalog_item--inline">Шестой</li>
+      <li class="catalog_item catalog_item--inline">Седьмой</li>
+      <li class="catalog_item catalog_item--inline">Восьмой</li>
+    </ul>
+  </section>
+
+  <section class='section'>
+    <p class="task">6) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float</p>
+    <ul class="catalog catalog--float">
+      <li class="catalog_item catalog_item--float">Первый</li>
+      <li class="catalog_item catalog_item--float">Второй</li>
+      <li class="catalog_item catalog_item--float">Третий</li>
+      <li class="catalog_item catalog_item--float">Четвертый</li>
+      <li class="catalog_item catalog_item--float">Пятый</li>
+      <li class="catalog_item catalog_item--float">Шестой</li>
+      <li class="catalog_item catalog_item--float">Седьмой</li>
+      <li class="catalog_item catalog_item--float">Восьмой</li>
+    </ul>
+  </section>
+
+
+  <section class='section'>
+    <p class="task">7) создать html таблицу из двух рядов и 4 ячеек</p>
+    <table class="table">
+      <tr class="table_row table_row--1">
+        <td class="table_cell">Первый</td>
+        <td class="table_cell">Второй</td>
+        <td class="table_cell">Третий</td>
+        <td class="table_cell">Четвертый</td>
+      </tr>
+      <tr class="table_row table_row--2">
+        <td class="table_cell">Пятый</td>
+        <td class="table_cell">Шестой</td>
+        <td class="table_cell">Седьмой</td>
+        <td class="table_cell">Восьмой</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class='section'>
+    <p class="task"> 8) создать таблицу из двух рядов и 4 ячеек используя для разметки только div</p>
+    <div class="div-table">
+      <div class='div-row div-row--first'>
+        <div class="block">Первый</div>
+        <div class="block">Второй</div>
+        <div class="block">Третий</div>
+        <div class="block">Четвертый</div>
+      </div>
+      <div class='div-row div-row--second'>
+        <div class="block">Пятый</div>
+        <div class="block">Шестой</div>
+        <div class="block">Седьмой</div>
+        <div class="block">Восьмой</div>
+      </div>
+    </div>
+  </section>
+
+  <section class='section'>
+    <p class="task"> 9) Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля.</p>
+
+    <div class="accordion">
+      <button class="accordion_button"> Раздел 1</button>
+      <div class="accordion_dropdown-element"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, amet.</p></div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion_button"> Раздел 2</button>
+      <div class="accordion_dropdown-element"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, amet.</p></div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion_button"> Раздел 3</button>
+      <div class="accordion_dropdown-element"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, amet.</p></div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Тестовое задание:
+
+Вся разметка должна быть написана по БЭМ. Работу залить на github репозиторий > сделать его публичным > опубликовать страницу на github pages > дать ссылку на работу.
+
+1) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex
+2) поменять направление осей с дефолтного состояния
+3) выравнить один элемент по поперечней оси
+4) задать выравнивание ряду flex-end
+5) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block
+6) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float
+7) создать html таблицу из двух рядов и 4 ячеек
+8) создать таблицу из двух рядов и 4 ячеек используя для разметки только div
+9) Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля. -->

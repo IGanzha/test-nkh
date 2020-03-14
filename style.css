@@ -1,0 +1,138 @@
+.section {
+	border: 1px solid #5180e9;
+	margin-bottom: 15px;
+  padding: 10px;
+}
+
+.task {
+  margin-top: 0;
+}
+
+.catalog {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.catalog_item {
+	width: 20%;
+	border: 1px solid black;
+	background-color: #4899e4;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+
+}
+
+.catalog--alt-direction {
+  height: 120px;
+	flex-direction: column;
+  align-items: flex-end;
+}
+
+.catalog_item--renegade {
+  align-self: flex-start;
+  background-color: #f03863;
+}
+
+.catalog--inline {
+  display: block;
+}
+
+.catalog_item--inline {
+  display: inline-block;
+}
+
+.catalog--float {
+  display: block;
+}
+
+.catalog--float::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.catalog_item--float {
+  float: left;
+  margin-right: 10px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table_cell {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #4899e4;
+  color: #fff;
+}
+
+.div-table {
+  display: table;
+}
+
+.div-row {
+  display: table-row;
+}
+
+.block {
+  /*width: 20%;*/
+  display: table-cell;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #4899e4;
+  color: #fff;
+  margin: 0 10px 10px;
+}
+
+.accordion {
+  margin-bottom: 10px;
+}
+
+.accordion_button {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #4899e4;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.accordion_button:hover,
+.accordion_button.opened {
+  background-color: #f03863;
+  box-shadow: 2px 2px 5px 0 black inset;
+}
+
+.accordion_dropdown-element {
+  display: none;
+}
+
+.accordion_dropdown-element.show {
+  display: block;
+}
+
+
+
+/*Тестовое задание:
+
+Вся разметка должна быть написана по БЭМ. Работу залить на github репозиторий > сделать его публичным > опубликовать страницу на github pages > дать ссылку на работу.
+
+1) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex
+2) поменять направление осей с дефолтного состояния
+3) выравнить один элемент по поперечней оси
+4) задать выравнивание ряду flex-end
+5) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block
+6) создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float
+7) создать html таблицу из двух рядов и 4 ячеек
+8) создать таблицу из двух рядов и 4 ячеек используя для разметки только div
+9) Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля.*/
